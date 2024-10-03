@@ -246,6 +246,7 @@ impl<I: fmt::Display> fmt::Display for VerboseError<I> {
   }
 }
 
+#[cfg(feature = "alloc")]
 impl<I: fmt::Debug + fmt::Display> crate::lib::std::error::Error for VerboseError<I> {}
 
 #[cfg(feature = "alloc")]
