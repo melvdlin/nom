@@ -98,7 +98,6 @@ impl<I: fmt::Display> fmt::Display for Error<I> {
   }
 }
 
-#[cfg(feature = "std")]
 impl<I: fmt::Debug + fmt::Display> std::error::Error for Error<I> {}
 
 #[cfg(feature = "alloc")]
@@ -247,7 +246,6 @@ impl<I: fmt::Display> fmt::Display for VerboseError<I> {
   }
 }
 
-#[cfg(feature = "std")]
 impl<I: fmt::Debug + fmt::Display> std::error::Error for VerboseError<I> {}
 
 #[cfg(feature = "alloc")]
