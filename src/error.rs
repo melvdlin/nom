@@ -98,7 +98,7 @@ impl<I: fmt::Display> fmt::Display for Error<I> {
   }
 }
 
-impl<I: fmt::Debug + fmt::Display> std::error::Error for Error<I> {}
+impl<I: fmt::Debug + fmt::Display> crate::lib::std::error::Error for Error<I> {}
 
 #[cfg(feature = "alloc")]
 #[cfg_attr(feature = "docsrs", doc(cfg(feature = "alloc")))]
@@ -246,7 +246,7 @@ impl<I: fmt::Display> fmt::Display for VerboseError<I> {
   }
 }
 
-impl<I: fmt::Debug + fmt::Display> std::error::Error for VerboseError<I> {}
+impl<I: fmt::Debug + fmt::Display> crate::lib::std::error::Error for VerboseError<I> {}
 
 #[cfg(feature = "alloc")]
 #[cfg_attr(feature = "docsrs", doc(cfg(feature = "alloc")))]

@@ -405,7 +405,7 @@ pub mod lib {
     pub use alloc::{borrow, boxed, string, vec};
 
     #[doc(hidden)]
-    pub use core::{cmp, convert, fmt, iter, mem, num, ops, option, result, slice, str};
+    pub use core::{cmp, convert, error, fmt, iter, mem, num, ops, option, result, slice, str};
 
     /// internal reproduction of std prelude
     #[doc(hidden)]
@@ -419,8 +419,8 @@ pub mod lib {
   pub mod std {
     #[doc(hidden)]
     pub use std::{
-      alloc, borrow, boxed, cmp, collections, convert, fmt, hash, iter, mem, num, ops, option,
-      result, slice, str, string, vec,
+      alloc, borrow, boxed, cmp, collections, convert, error, fmt, hash, iter, mem, num, ops,
+      option, result, slice, str, string, vec,
     };
 
     /// internal reproduction of std prelude
